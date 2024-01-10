@@ -1,0 +1,131 @@
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  .click-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 2px solid #e74c3c;
+    border-radius: 5px;
+    background-color: #42c4d8;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .click-button:hover {
+    background-color: #fff;
+    color: #339ada;
+  }
+  
+  .scrolling-text {
+    display: none;
+  }
+  
+  h1 {
+    color: #e73cc5;
+  }
+  
+  .cake {
+    width: 200px;
+    height: 200px;
+    background-image: url("./Satya\ prasad.jpg");
+    background-size: cover;
+    background-color: #ffd700;
+    /* border-radius: 50% 50% 0 0; */
+    position: relative;
+    margin: 20px auto;
+  }
+  
+  /* .candle {
+    width: 8px;
+    height: 40px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .candle::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ffd700;
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+  } */
+  
+  @keyframes blink {
+    0%, 50% {
+      opacity: 1;
+    }
+    51%, 100% {
+      opacity: 0;
+    }
+  }
+  
+  /* .candle-animation {
+    animation: blink 1s infinite;
+  } */
+  /* ... (previous CSS styles remain the same) */
+  
+  /* Fireworks canvas */
+  #fireworks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  /* Existing styles... */
+
+.spark {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: explode 1s ease-out infinite;
+  }
+  
+  @keyframes explode {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-500px) scale(0);
+      opacity: 0;
+    }
+  }
+  
+
+  @media only screen and (max-width:800px) {
+   
+    .card{
+        
+       width: 50%;
+       
+    }
+  }
